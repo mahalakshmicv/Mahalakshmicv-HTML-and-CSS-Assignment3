@@ -8,11 +8,31 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
+}
+
+.logo{
+   max-width: 100%;
+}
+
+.logo img{
+    max-width: 100%;
+    padding-left: 50px;
 }
 
 .nav-links {
@@ -102,25 +122,27 @@ header {
 .hero-section {
     display: flex;
     align-items: center;
-    padding: 50px 0px 0px 100px;
+    padding: 0px 0px 0px 50px;
     background-color: #161E21;
 }
 
 .content {
-    max-width: 790px;
+    max-width: 100%;
     color: #fff;
 }
 
 .content h1 {
-    font-size: 80px;
+    font-size: 90px;
     padding-top: -80px;
+    padding-left: -80px;
     font-weight: bold;
     line-height: 1.5;
+    margin-bottom: 5px;
 }
 
 .content p {
     font-size: 18px;
-    margin: 30px 0;
+    margin-bottom: 70px;
 }
 
 .btn {
@@ -149,11 +171,12 @@ header {
 
 .hero-image {
     position: relative;
-    max-width: 1000px;
+    max-width: 100%;
+    padding-top: 20%;
 }
 
 .hero-image img {
-    max-width: 1140px;
+    max-width: 100%;
     height: auto;
     position: relative; 
     z-index: 2;
@@ -161,14 +184,13 @@ header {
 
 .neon-icon {
     position: absolute;
-    top: 20px;
-    right: 190px;
+    top:2%;
+    right: -8%;
     z-index: 1; 
 }
 
 .neon-icon img {
-    max-width: 450px;
-    filter: drop-shadow(0 0 20px #a0e8e3);
+    max-width: 100%;  
 }
 
 .how-it-works {
@@ -176,7 +198,7 @@ header {
     font-family: Arial, sans-serif;
     margin: 40px;
     display: flex;
-    padding-left: 50px;
+
 }
 
 .how-it h2 {
@@ -251,7 +273,7 @@ header {
 }
 
 .ev-image img {
-    width: 60%;
+    max-width: 100%;
     padding-left: 6%;
     padding-bottom: 6%;
 }
@@ -271,6 +293,7 @@ header {
     align-items: flex-start;
     margin: 0;
     text-align: left;
+    padding-left: 30%;
 }
 
 .detail p {
@@ -330,7 +353,8 @@ header {
 .numbers {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    margin: trim 50px; ;
+
 }
 
 .number-box {
@@ -395,7 +419,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+
 }
 
 .card {
@@ -404,7 +428,7 @@ header {
     border-radius: 8px;
     padding: 30px;
     width: 250px;
-    text-align: center;
+    text-align: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -504,31 +528,27 @@ header {
 .footer {
     background-color: #222;
     color: #ccc;
-    padding: 0px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
 }
 
 .footer-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: left;
 }
 
 .footer-content p {
     font-size: 15px;
-    margin-left: 3%;
-    padding: 0%;
+    margin-left: -20%;
 }
 
 .footer-links {
     display: flex;
-    gap: 50px;
-    margin: 15px 0;
+    gap: 40px; 
     padding: 20px;
     list-style: none;
-    margin-left: 40%;
+    margin-left: 10%;
 }
 
 .footer-links li a {
@@ -546,7 +566,7 @@ header {
     display: flex;
     gap: 10px;
     margin-top: 10px;
-    margin-left: 40%;
+    margin-left: 30%;
 }
 
 .social-icons a img {
