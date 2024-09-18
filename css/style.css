@@ -7,7 +7,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    display: block;
 }
 
 header {
@@ -15,19 +14,20 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed; 
     top: 0;
+    min-height: 50px;
     width: 100%;
     z-index: 1000; 
 }
 
 .container {
-    width: 100%;
+    max-width:100%;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
 }
 
 section {
-    width: 100%;
+    max-width: 100%;
 }
 
 .navbar {
@@ -46,7 +46,7 @@ section {
 }
 
 .logo img {
-    width: 100%; 
+    max-width: 100%; 
 }
 
 .nav-links {
@@ -138,29 +138,16 @@ section {
     background-color: #161E21;
     max-width: 1200px;
     text-align: center;
-    width: 100%;
     margin: 0 auto;
     min-height: 741px; 
     padding:100px;
     position: relative; 
     box-sizing: border-box; 
-    
+    flex-direction: row; 
+    max-width: 100%;
+    gap: 20px;   
 }
 
-@media (min-width: 768px) {
-    .hero-section {
-        flex-direction: row; 
-        padding: 100px;
-        max-width: 100%;
-        text-align: center;
-        width: 100%;
-        gap: 20px; 
-        margin: 0 auto;
-        position: relative; 
-        background-color: #161E21;
-        box-sizing: border-box;
-    }
-}
 
 .content {
     max-width: 500px;
@@ -185,7 +172,7 @@ section {
 }
 
 .content p {
-    width: 334px;
+    max-width: 334px;
     height: 49px;
     font-family: Anybody;
     font-size: 22px;
@@ -199,7 +186,7 @@ section {
     justify-content: center;
     gap: 10px;
     color: #ffff;
-    width:178px;
+    max-width:178px;
     height:56px;
     padding: 16px;
     border-radius: 10px;
@@ -223,7 +210,7 @@ section {
     align-items: right;
     padding: 50px 0px;
     padding-right: 0px;
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -339,7 +326,7 @@ section {
 }
 
 .ev-image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block; 
 }
@@ -421,19 +408,17 @@ section {
 
 .number-box {
     background-color: #fff;
-    width: 250px;
+    width:250px;
     padding: 30px;
-    text-align: start;
+    text-align: center;
     display: flex;
     flex-direction:column;
-    align-items: center;
     transition: transform 0.3s;
     
 }
 
 .icon {
     font-size: 50px;
-
     color: #555;
 }
 
@@ -488,7 +473,7 @@ section {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 30px;
-    width: 250px;
+    max-width: 250px;
     text-align: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -535,21 +520,14 @@ section {
 
 .download-app {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     align-items: center;
     justify-content: center;
     padding: 50px  0px 0px; 
     background-color: #fff;
     text-align: center;
     box-sizing: border-box;
-}
-
-@media (min-width: 768px) {
-    .download-app {
-        flex-direction: row; 
-        gap: 40px; 
-        padding: 50px 0px 0px ;
-    }
+    
 }
 
 .phone-image {
@@ -570,7 +548,6 @@ section {
 .app-info {
     flex: 1;
     max-width: 500px; 
-   
     text-align: start;
 }
 
@@ -649,7 +626,7 @@ section {
 }
 
 .social-icons a img {
-    width: 20px;
+    max-width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
     transition: transform 0.3s;
@@ -657,4 +634,57 @@ section {
 
 .social-icons a:hover img {
     transform: scale(1.1);
+}
+
+
+
+@media (min-width: 768px) {
+    .navbar {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero-section {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .how-it-works {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .steps {
+      flex-wrap: wrap;
+    }
+  
+    .step {
+      flex: 1 1 400px;
+      max-width: 400px;
+    }
+  
+    .ev-info {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .numbers-section {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .popular-rentals {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .download-app {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .footer {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 }
