@@ -3,179 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrify Vehicle Rental</title>
+    
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Assignment-3</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar container">
+             <!-- Menu Toggle Checkbox with ARIA -->
+             <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" />
+
+             <!-- Menu Icon (Label for the Checkbox) -->
+             <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+                 <div class="bar"></div>
+                 <div class="bar"></div>
+                 <div class="bar"></div>
+             </label>  
+                   
             <div class="logo">
-                <img src="images/logo.png" altc=" Electrify vehicle">
+                <img src="images/logo.png" alt="Electrify Vehicle">
             </div>
-            <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">HOW IT WORKS</a></li>
-                <li><a href="#">CHARGING</a></li>
-                <li class="dropdown">
-                    <a href="#">VEHICLES</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Car 1</a></li>
-                        <li><a href="#">Car 2</a></li>
-                        <li><a href="#">Car 3</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="nav-right">
-                <a href="#" class="cart">
-                    <img src="images/cart-icon.png" alt="Cart"> MY CART
-                </a>
-                <a href="#" class="login-btn">LOGIN</a>
-            </div>
+
+
+                <ul class="nav-links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">HOW IT WORKS</a></li>
+                    <li><a href="#">CHARGING</a></li>
+                    <li class="dropdown">
+                        <a href="#">VEHICLES</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Car 1</a></li>
+                            <li><a href="#">Car 2</a></li>
+                            <li><a href="#">Car 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-right">
+                    <a href="#" class="cart">
+                        <img src="images/cart-icon.png" alt="Cart"> MY CART
+                    </a>
+                    <a href="#" class="login-btn">LOGIN</a>
+                </div>
+
         </nav>
-    </header> -->
-    <section class="hero-section container">
-        <div class="heroCont" style="max-width: 1200px; margin: auto">
-            <div class="content">
-                <h1>ELEVATE <br>YOUR RIDE</h1>
-                <p>RENT AN ELECTRIC CAR AND FEEL<br>
-                THE POWER OF THE FUTURE.</p>
-                <button>VEHICLES <img src="images/arrow-right.png"></button>
-            </div>
-            <div class="hero-image">
-                <img class="hero-car" src="images/car-image.png" alt="Electric Car">
-                <img class="lighting" src="images/lightning-icon.png" alt="Neon Lightning Icon">
-            </div>
-        </div>
-    </section>
-    <section class="how-it-works container">
-        <div class="how-it">
-            <h2>HOW IT WORKS</h2>
-            <p>Rent your next ev following these steps</p>
-        </div>
-        
-        <div class="steps">
-            <div class="step">
-                <i class="icon1 ev"></i>
-                <h3>Choose an EV</h3>
-                <p>Browse our catalog to<br>view hundreds of EVs.</p>
-            </div>
-            <div class="step">
-                <i class="icon1 date"></i>
-                <h3>Pick a date</h3>
-                <p>Choose the dates you'd<br>like to rent your EV.</p>
-            </div>
-            <div class="step">
-                <i class="icon1 book"></i>
-                <h3>Book your car</h3>
-                <p>Confirm details and<br>book your vehicle.</p>
-            </div>
-        </div>
-    </section>
-    <section class="ev-info container">
-        <div class="ev-image">
-            <img src="images/ev-charge-image.png" alt="EV Charging">
-        </div>
-        <div class="ev-details">
-                <div class="detail">
-                    <i class="icon2 calendar"></i>
-                    <p><span>Flexible dates</span> Choose any <br>date, time, and length you'd<br> like to rent your EV for</p>
+
+    </header>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="heroCont container">
+                <div class="content">
+                    <h1>ELEVATE YOUR RIDE</h1>
+                    <p>RENT AN ELECTRIC CAR AND FEEL<br>
+                    THE POWER OF THE FUTURE.</p>
+                    <button>VEHICLES <img src="images/arrow-right.png" alt="Arrow Right"></button>
                 </div>
-                <div class="detail">
-                    <i class="icon2 map"></i>
-                    <p><span>Plan your trip</span> Our built-in<br> charging map helps you plan<br> your trip.</p>
+                <div class="hero-image">
+                    <img class="hero-car" src="images/car-image.png" alt="Electric Car">
+                    <img class="lighting" src="images/lightning-icon.png" alt="Neon Lightning Icon">
                 </div>
-                <div class="detail">
-                    <i class="icon2 sup"></i>
-                    <p><span>24/7 support</span> Contact us<br> any time of day with any<br> questions, comments, or<br> support needs.</p>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works ">
+            <div class="howCont container">
+                <div class="how-it">
+                    <h2>HOW IT WORKS</h2>
+                    <p>Rent your next EV by following these steps</p>
                 </div>
-                <div class="detail">
-                    <i class="icon2 delivery"></i>
-                    <p><span>24hr car deliver</span> Get your<br> EV delivered to your location<br> any time of day.</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <i class="icon1 ev"></i>
+                        <h3>Choose an EV</h3>
+                        <p>Browse our catalog to<br>view hundreds of EVs.</p>
+                    </div>
+                    <div class="step">
+                        <i class="icon1 date"></i>
+                        <h3>Pick a date</h3>
+                        <p>Choose the dates you'd<br>like to rent your EV.</p>
+                    </div>
+                    <div class="step">
+                        <i class="icon1 book"></i>
+                        <h3>Book your car</h3>
+                        <p>Confirm details and<br>book your vehicle.</p>
+                    </div>
                 </div>
-            
-        </div>
-    </section>
-    <section class="numbers-section container">
-            <h2>NUMBERS THAT MATTER</h2>
-            <p>With so many vehicle rental websites, here’s some facts that make us stand out.</p>
-        <div class="numbers">
-            <div class="number-box">
-                <i class="icon smiley"></i>
-                <h3>25k+</h3>
-                <p>Happy customers</p>
+            </div> 
+        </section> 
+
+        <!-- EV Info Section -->
+        <section class="ev-info ">
+            <div class="evCont container">
+                <div class="ev-image">
+                    <img src="images/ev-charge-image.png" alt="EV Charging">
+                </div>
+                <div class="ev-details">
+                    <div class="detail">
+                        <i class="icon2 calendar"></i>
+                        <p><span>Flexible dates:</span> Choose any <br>date, time, and length you'd<br> like to rent your EV for</p>
+                    </div>
+                    <div class="detail">
+                        <i class="icon2 map"></i>
+                        <p><span>Plan your trip:</span> Our built-in<br> charging map helps you plan<br> your trip.</p>
+                    </div>
+                    <div class="detail">
+                        <i class="icon2 sup"></i>
+                        <p><span>24/7 support:</span> Contact us<br> any time of day with any<br> questions, comments, or<br> support needs.</p>
+                    </div>
+                    <div class="detail">
+                        <i class="icon2 delivery"></i>
+                        <p><span>24hr car delivery:</span> Get your<br> EV delivered to your location<br> any time of day.</p>
+                    </div>
+                </div>
             </div>
-            <div class="number-box">
-                <i class="icon carbon"></i>
-                <h3>86k+</h3>
-                <p>Carbon emissions saved (kg)</p>
+        </section>
+
+        <!-- Numbers Section -->
+        <section class="numbers-section">
+            <div class="numberCount container">
+                <h2>NUMBERS THAT MATTER</h2>
+                <p>With so many vehicle rental websites, here are some facts that make us stand out.</p>
+                <div class="numbers">
+                    <div class="number-box">
+                        <i class="icon smiley"></i>
+                        <h3>25k+</h3>
+                        <p>Happy customers</p>
+                    </div>
+                    <div class="number-box">
+                        <i class="icon carbon"></i>
+                        <h3>86k+</h3>
+                        <p>Carbon emissions saved (kg)</p>
+                    </div>
+                    <div class="number-box">
+                        <i class="icon cars"></i>
+                        <h3>80+</h3>
+                        <p>Vehicles to choose from</p>
+                    </div>
+                    <div class="number-box">
+                        <i class="icon support"></i>
+                        <h3>50k+</h3>
+                        <p>US based support staff</p>
+                    </div>
+                </div>
             </div>
-            <div class="number-box">
-                <i class="icon cars"></i>
-                <h3>80+</h3>
-                <p>Vehicles to choose from</p>
+        </section>
+
+        <!-- Popular Rentals Section -->
+        <section class="popular-rentals container">
+            <h2>MOST POPULAR RENTALS</h2>
+            <div class="rental-cards">
+                <div class="card">
+                    <img src="images/polestar.png" alt="Polestar 2">
+                    <h3>Polestar 2</h3>
+                    <p>The Polestar 2 is so fast you'll leave a Tesla in the dust.</p>
+                    <a href="#" class="more-info">MORE INFO <span>→</span></a>
+                </div>
+                <div class="card">
+                    <img src="images/mustang.png" alt="Ford Mustang Mach-E">
+                    <h3>Ford Mustang Mach-E</h3>
+                    <p>The Mach-E is so stylish you'll turn heads everywhere you go.</p>
+                    <a href="#" class="more-info">MORE INFO <span>→</span></a>
+                </div>
+                <div class="card">
+                    <img src="images/rivian.png" alt="Rivian R1S">
+                    <h3>Rivian R1S</h3>
+                    <p>An electric truck so luxurious it feels like you’re in a Mercedes.</p>
+                    <a href="#" class="more-info">MORE INFO <span>→</span></a>
+                </div>
+                <div class="card">
+                    <img src="images/tesla.png" alt="Tesla Model 3">
+                    <h3>Tesla Model 3</h3>
+                    <p>The Model 3 is so quiet that you'll wonder if it’s even on.</p>
+                    <a href="#" class="more-info">MORE INFO <span>→</span></a>
+                </div>
             </div>
-            <div class="number-box">
-                <i class="icon support"></i>
-                <h3>50k+</h3>
-                <p>US based support staff</p>
+            <a href="#" class="shop-all">SHOP ALL <span>→</span></a>
+        </section>
+
+        <!-- Download App Section -->
+        <section class="download-app container">
+            <div class="phone-image">
+                <img src="images/phone-mockup.png" alt="Phone showing the app screen">
             </div>
-        </div>
-    </section>
-    <section class="popular-rentals container">
-        <h2>MOST POPULAR RENTALS</h2>
-        <div class="rental-cards">
-            <div class="card">
-                <img src="images/polestar.png" alt="Polestar 2">
-                <h3>Polestar 2</h3>
-                <p>The Polestar 2 is so fast you'll leave a Tesla in the dust.</p>
-                <a href="#" class="more-info">MORE INFO <span>→</span></a>
+            <div class="app-info">
+                <h2>DOWNLOAD THE APP</h2>
+                <p>With our app, you can book an electric vehicle in minutes, find<br>
+                charging stations near you, and track your rental car’s battery<br>
+                life. Available on both iOS and Android.</p>
+                <div class="app-buttons">
+                    <a href="#">
+                        <img src="images/app-store.png" alt="Download on the App Store">
+                    </a>
+                    <a href="#">
+                        <img src="images/google-play.png" alt="Get it on Google Play">
+                    </a>
+                </div>
             </div>
-            <div class="card">
-                <img src="images/mustang.png" alt="Ford Mustang Mach-E">
-                <h3>Ford Mustang Mach-E</h3>
-                <p>The Mach-E is so stylish you'll turn heads everywhere you go.</p>
-                <a href="#" class="more-info">MORE INFO <span>→</span></a>
-            </div>
-            <div class="card">
-                <img src="images/rivian.png" alt="Rivian R1S">
-                <h3>Rivian R1S</h3>
-                <p>An electric truck so luxurious it feels like you’re in a Mercedes.</p>
-                <a href="#" class="more-info">MORE INFO <span>→</span></a>
-            </div>
-            <div class="card">
-                <img src="images/tesla.png" alt="Tesla Model 3">
-                <h3>Tesla Model 3</h3>
-                <p>The Model 3 is so quiet that you'll wonder if it’s even on.</p>
-                <a href="#" class="more-info">MORE INFO <span>→</span></a>
-            </div>
-        </div>
-        <a href="#" class="shop-all">SHOP ALL <span>→</span></a>
-    </section>
-    <section class="download-app container">
-        <div class="phone-image">
-            <img src="images/phone-mockup.png" alt="Phone showing the app screen">
-        </div>
-        <div class="app-info">
-            <h2>DOWNLOAD THE APP</h2>
-            <p>With our app, you can book an electric vehicle in minutes, find <br>charging stations near you, and track your rental car’s battery<br> life. Available on both iOS and Android.</p>
-            <div class="app-buttons">
-                <a href="#">
-                    <img src="images/app-store.png" alt="Download on the App Store">
-                </a>
-                <a href="#">
-                    <img src="images/google-play.png" alt="Get it on Google Play">
-                </a>
-            </div>
-        </div>
-    </section>
+        </section> 
+    </main>
+
     <!-- Footer Section -->
-    <footer class="footer container">
-        <div class="footer-content">
-                <p>Electrify@2023.Allrightsreserved.</p>
+    <footer class="footer ">
+        <div class="footer-content container">
+            <p>Electrify &copy; 2023. All rights reserved.</p>
             <ul class="footer-links">
                 <li><a href="#">Legal</a></li>
                 <li><a href="#">Insurance</a></li>
@@ -190,7 +231,7 @@
                 <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
                 <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
             </div>
-        </div>
-    </footer>
+        </div> 
+    </footer> 
 </body>
 </html>
